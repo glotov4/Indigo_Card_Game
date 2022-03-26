@@ -1,6 +1,6 @@
 package indigo
 
-class Card (_rank: String, _suite: String) {
+class Card(_rank: String, _suite: String) {
     var rank = _rank
     private val defaultRank = "A"
 
@@ -18,19 +18,19 @@ class Card (_rank: String, _suite: String) {
         }
     }
 
-    fun hasSameRankOrSuite(cardToCompare: Card) : Boolean {
+    fun hasSameRankOrSuite(cardToCompare: Card): Boolean {
         return compareRank(cardToCompare) || compareSuite(cardToCompare)
     }
 
-    private fun compareRank(cardToCompare: Card) : Boolean {
+    private fun compareRank(cardToCompare: Card): Boolean {
         return this.rank == cardToCompare.rank
     }
 
-    private fun compareSuite(cardToCompare: Card) : Boolean {
+    private fun compareSuite(cardToCompare: Card): Boolean {
         return this.suite == cardToCompare.suite
     }
 
-    override fun toString() : String {
+    override fun toString(): String {
         return "$rank$suite"
     }
 }

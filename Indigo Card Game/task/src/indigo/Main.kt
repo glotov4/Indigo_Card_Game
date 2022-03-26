@@ -1,6 +1,5 @@
 package indigo
 
-val DEFAULT_CARD = Card("A", "♥")
 
 fun main() {
     println("Indigo Card Game")
@@ -9,22 +8,18 @@ fun main() {
     Deck.shuffle()
 
     Table.start()
-    val player = Player()
-    val playersPocket = player.Pocket()
-    val computer = Player()
-    val computersPocket = computer.Pocket()
 
-//    /** Take 6 cards in hand **/
-//    playersHand.takeCards()
-//    computersHand.takeCards()
+    val player = User()
+    val computer = User()
+
     /** If not all cards are played, take turns **/
-    while (Table.cards.size < 52) {
-        when (Table.playersTurn) {
-            true -> player.makeTurn()
-            false -> computer.makeTurn()
-        }
+    while (Table.cards.size < Deck.DEFAULT_DECK_SIZE) {
+        if (Table.playersTurn) player.makeTurn() else computer.makeTurn()
+        if (Table.cards.isEmpty()) Table.scores(player, computer)
     }
+
     Table.printNumAndTopCards()
+    Table.scores(player, computer)
     println("Game Over")
 }
 
