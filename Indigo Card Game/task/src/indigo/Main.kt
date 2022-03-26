@@ -1,5 +1,6 @@
 package indigo
 
+var turn = 0
 
 fun main() {
     println("Indigo Card Game")
@@ -13,13 +14,12 @@ fun main() {
     val computer = User()
 
     /** If not all cards are played, take turns **/
-    while (Table.cards.size < Deck.DEFAULT_DECK_SIZE) {
+    while (turn < Table.Rules.TOTAL_TURNS) {
+        turn++
         if (Table.playersTurn) player.makeTurn() else computer.makeTurn()
-        if (Table.cards.isEmpty()) Table.scores(player, computer)
+        if (Table.cards.isEmpty() && turn != Table.Rules.TOTAL_TURNS) Table.scoresIntermediate(player, computer)
     }
-
-    Table.printNumAndTopCards()
-    Table.scores(player, computer)
+    Table.countFinalScore(player, computer)
     println("Game Over")
 }
 

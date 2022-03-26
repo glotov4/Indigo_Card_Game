@@ -44,7 +44,7 @@ class User {
     }
 
     fun makeTurn() {
-        if (hand.size == 0 && Deck.deck.size != 0) takeCardsFromDeck() // if hand is empty - take cards
+        if (hand.size == 0 && Deck.deck.size != 0) takeCardsFromDeck()  // if hand is empty - take cards
         Table.printNumAndTopCards() // print what's on the table
 
         if (Table.playersTurn) printCardsInHand() // if it's player's turn - print hand to choose from
@@ -67,12 +67,14 @@ class User {
         fun pocketCards() {
             pocket.pocketedCards.addAll(Table.cards)
             Table.cards.clear()
-            if (Table.playersTurn) {
-                println("Player wins cards")
-                Table.playerWonLast = true
-            } else {
-                println("Computer wins cards")
-                Table.playerWonLast = false
+            if (turn != Table.Rules.TOTAL_TURNS) {
+                if (Table.playersTurn) {
+                    println("Player wins cards")
+                    Table.playerWonLast = true
+                } else {
+                    println("Computer wins cards")
+                    Table.playerWonLast = false
+                }
             }
         }
 
@@ -99,6 +101,7 @@ class User {
                 if (Table.Rules.TOP_RANKS.contains(card.rank)) pointsForRanks += Table.Rules.POINTS_FOR_RANK
             }
         }
+
 
         /** Count total points **/
         fun countTotalPoints() {
