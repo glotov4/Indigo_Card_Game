@@ -616,12 +616,6 @@ files:
 
 
   learner_created: false
-- name: src/indigo/printTable.kt
-  visible: true
-  text: |+
-    package indigo
-
-  learner_created: true
 - name: src/indigo/Card.kt
   visible: true
   text: |-
@@ -945,6 +939,80 @@ files:
 
     }
   learner_created: true
-feedback_link: https://hyperskill.org/projects/214/stages/1076/implement#comment
-status: Unchecked
+feedback_link: https://hyperskill.org/learn/step/16512#comment
+status: Failed
+feedback:
+  message: "Wrong answer in test #1\n\nWrong score output.\n\nPlease find below the\
+    \ output of your program during this failed test.\nNote that the &#39;&gt;&#39;\
+    \ character indicates the beginning of the input line.\n\n---\n\n[last 250 lines\
+    \ of output are shown, 24 skipped]\nComputer plays K♠\nComputer wins cards\nScore:\
+    \ Player 0 - Computer 4\nCards: Player 0 - Computer 8\n\nNo cards on the table\n\
+    Cards in hand: 1)K♣ 2)10♣ 3)2♥ 4)9♥\nChoose a card to play (1-4):\n&gt; 1\n\n\
+    1 cards on the table, and the top card is K♣\n7♦ 7♣ 2♣ 4♠ \nComputer plays 7♣\n\
+    Computer wins cards\nScore: Player 0 - Computer 5\nCards: Player 0 - Computer\
+    \ 10\n\nNo cards on the table\nCards in hand: 1)10♣ 2)2♥ 3)9♥\nChoose a card to\
+    \ play (1-3):\n&gt; 1\n\n1 cards on the table, and the top card is 10♣\n7♦ 2♣\
+    \ 4♠ \nComputer plays 2♣\nComputer wins cards\nScore: Player 0 - Computer 6\n\
+    Cards: Player 0 - Computer 12\n\nNo cards on the table\nCards in hand: 1)2♥ 2)9♥\
+    \nChoose a card to play (1-2):\n&gt; 1\n\n1 cards on the table, and the top card\
+    \ is 2♥\n7♦ 4♠ \nComputer plays 7♦\n\n2 cards on the table, and the top card is\
+    \ 7♦\nCards in hand: 1)9♥\nChoose a card to play (1-1):\n&gt; 1\n\n3 cards on\
+    \ the table, and the top card is 9♥\n4♠ \nComputer plays 4♠\n\n4 cards on the\
+    \ table, and the top card is 4♠\nCards in hand: 1)10♦ 2)10♠ 3)4♣ 4)J♦ 5)A♣ 6)Q♦\
+    \nChoose a card to play (1-6):\n&gt; 2\nPlayer wins cards\nScore: Player 1 - Computer\
+    \ 6\nCards: Player 5 - Computer 12\n\nNo cards on the table\n9♣ 3♠ 8♦ 4♥ 5♥ 3♣\
+    \ \nComputer plays 9♣\n\n1 cards on the table, and the top card is 9♣\nCards in\
+    \ hand: 1)10♦ 2)4♣ 3)J♦ 4)A♣ 5)Q♦\nChoose a card to play (1-5):\n&gt; 2\nPlayer\
+    \ wins cards\nScore: Player 1 - Computer 6\nCards: Player 7 - Computer 12\n\n\
+    No cards on the table\n3♠ 8♦ 4♥ 5♥ 3♣ \nComputer plays 4♥\n\n1 cards on the table,\
+    \ and the top card is 4♥\nCards in hand: 1)10♦ 2)J♦ 3)A♣ 4)Q♦\nChoose a card to\
+    \ play (1-4):\n&gt; 1\n\n2 cards on the table, and the top card is 10♦\n3♠ 8♦\
+    \ 5♥ 3♣ \nComputer plays 8♦\nComputer wins cards\nScore: Player 1 - Computer 7\n\
+    Cards: Player 7 - Computer 15\n\nNo cards on the table\nCards in hand: 1)J♦ 2)A♣\
+    \ 3)Q♦\nChoose a card to play (1-3):\n&gt; 1\n\n1 cards on the table, and the\
+    \ top card is J♦\n3♠ 5♥ 3♣ \nComputer plays 3♠\n\n2 cards on the table, and the\
+    \ top card is 3♠\nCards in hand: 1)A♣ 2)Q♦\nChoose a card to play (1-2):\n&gt;\
+    \ 1\n\n3 cards on the table, and the top card is A♣\n5♥ 3♣ \nComputer plays 3♣\
+    \nComputer wins cards\nScore: Player 1 - Computer 9\nCards: Player 7 - Computer\
+    \ 19\n\nNo cards on the table\nCards in hand: 1)Q♦\nChoose a card to play (1-1):\n\
+    &gt; 1\n\n1 cards on the table, and the top card is Q♦\n5♥ \nComputer plays 5♥\
+    \n\n2 cards on the table, and the top card is 5♥\nCards in hand: 1)6♠ 2)3♦ 3)A♥\
+    \ 4)9♠ 5)7♥ 6)J♥\nChoose a card to play (1-6):\n&gt; 3\nPlayer wins cards\nScore:\
+    \ Player 3 - Computer 9\nCards: Player 10 - Computer 19\n\nNo cards on the table\n\
+    9♦ A♠ K♥ K♦ Q♣ 6♦ \nComputer plays 9♦\n\n1 cards on the table, and the top card\
+    \ is 9♦\nCards in hand: 1)6♠ 2)3♦ 3)9♠ 4)7♥ 5)J♥\nChoose a card to play (1-5):\n\
+    &gt; 2\nPlayer wins cards\nScore: Player 3 - Computer 9\nCards: Player 12 - Computer\
+    \ 19\n\nNo cards on the table\nA♠ K♥ K♦ Q♣ 6♦ \nComputer plays K♦\n\n1 cards on\
+    \ the table, and the top card is K♦\nCards in hand: 1)6♠ 2)9♠ 3)7♥ 4)J♥\nChoose\
+    \ a card to play (1-4):\n&gt; 1\n\n2 cards on the table, and the top card is 6♠\
+    \nA♠ K♥ Q♣ 6♦ \nComputer plays A♠\nComputer wins cards\nScore: Player 3 - Computer\
+    \ 11\nCards: Player 12 - Computer 22\n\nNo cards on the table\nCards in hand:\
+    \ 1)9♠ 2)7♥ 3)J♥\nChoose a card to play (1-3):\n&gt; 1\n\n1 cards on the table,\
+    \ and the top card is 9♠\nK♥ Q♣ 6♦ \nComputer plays K♥\n\n2 cards on the table,\
+    \ and the top card is K♥\nCards in hand: 1)7♥ 2)J♥\nChoose a card to play (1-2):\n\
+    &gt; 1\nPlayer wins cards\nScore: Player 4 - Computer 11\nCards: Player 15 - Computer\
+    \ 22\n\nNo cards on the table\nQ♣ 6♦ \nComputer plays Q♣\n\n1 cards on the table,\
+    \ and the top card is Q♣\nCards in hand: 1)J♥\nChoose a card to play (1-1):\n\
+    &gt; 1\n\n2 cards on the table, and the top card is J♥\n6♦ \nComputer plays 6♦\
+    \n\n3 cards on the table, and the top card is 6♦\nCards in hand: 1)J♣ 2)5♦ 3)2♦\
+    \ 4)8♣ 5)10♥ 6)5♣\nChoose a card to play (1-6):\n&gt; 2\nPlayer wins cards\nScore:\
+    \ Player 6 - Computer 11\nCards: Player 19 - Computer 22\n\nNo cards on the table\n\
+    J♠ 7♠ 8♠ 6♣ 6♥ 5♠ \nComputer plays J♠\n\n1 cards on the table, and the top card\
+    \ is J♠\nCards in hand: 1)J♣ 2)2♦ 3)8♣ 4)10♥ 5)5♣\nChoose a card to play (1-5):\n\
+    &gt; 1\nPlayer wins cards\nScore: Player 8 - Computer 11\nCards: Player 21 - Computer\
+    \ 22\n\nNo cards on the table\n7♠ 8♠ 6♣ 6♥ 5♠ \nComputer plays 7♠\n\n1 cards on\
+    \ the table, and the top card is 7♠\nCards in hand: 1)2♦ 2)8♣ 3)10♥ 4)5♣\nChoose\
+    \ a card to play (1-4):\n&gt; 2\n\n2 cards on the table, and the top card is 8♣\
+    \n8♠ 6♣ 6♥ 5♠ \nComputer plays 6♣\nComputer wins cards\nScore: Player 8 - Computer\
+    \ 11\nCards: Player 21 - Computer 25\n\nNo cards on the table\nCards in hand:\
+    \ 1)2♦ 2)10♥ 3)5♣\nChoose a card to play (1-3):\n&gt; 3\n\n1 cards on the table,\
+    \ and the top card is 5♣\n8♠ 6♥ 5♠ \nComputer plays 5♠\nComputer wins cards\n\
+    Score: Player 8 - Computer 11\nCards: Player 21 - Computer 27\n\nNo cards on the\
+    \ table\nCards in hand: 1)2♦ 2)10♥\nChoose a card to play (1-2):\n&gt; 1\n\n1\
+    \ cards on the table, and the top card is 2♦\n8♠ 6♥ \nComputer plays 8♠\n\n2 cards\
+    \ on the table, and the top card is 8♠\nCards in hand: 1)10♥\nChoose a card to\
+    \ play (1-1):\n&gt; 1\n\n3 cards on the table, and the top card is 10♥\n6♥ \n\
+    Computer plays 6♥\nComputer wins cards\n\nNo cards on the table\nScore: Player\
+    \ 8 - Computer 15\nCards: Player 21 - Computer 31\nGame Over"
+  time: Wed, 30 Mar 2022 10:23:15 UTC
 record: -1

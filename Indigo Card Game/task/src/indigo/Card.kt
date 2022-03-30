@@ -2,31 +2,29 @@ package indigo
 
 class Card(_rank: String, _suite: String) {
     var rank = _rank
-    private val defaultRank = "A"
-
     var suite = _suite
-    private val defaultSuite = "♥"
 
-    init { // check if Rank & Suite is available
+    /** Check if Rank & Suite are allowed. If not - set to default **/
+    init {
         rank = if (Deck.RANKS.contains(_rank)) _rank else {
-            println("Unknown rank. Switching to default: \"A\"")
-            defaultRank
+            println("Unknown rank. Switching to default: \"${Deck.DEFAULT_CARD.rank}\"")
+            Deck.DEFAULT_CARD.rank
         }
         suite = if (Deck.SUITES.contains(_suite)) _suite else {
-            println("Unknown suite. Switching to default: \"♥\"")
-            defaultSuite
+            println("Unknown suite. Switching to default: \"${Deck.DEFAULT_CARD.suite}\"")
+            Deck.DEFAULT_CARD.suite
         }
     }
 
-    fun hasSameRankOrSuite(cardToCompare: Card): Boolean {
-        return compareRank(cardToCompare) || compareSuite(cardToCompare)
+    fun hasSameRankOrSuiteAs(cardToCompare: Card): Boolean {
+        return hasSameRankAs(cardToCompare) || hasSameSuiteAs(cardToCompare)
     }
 
-    private fun compareRank(cardToCompare: Card): Boolean {
+    fun hasSameRankAs(cardToCompare: Card): Boolean {
         return this.rank == cardToCompare.rank
     }
 
-    private fun compareSuite(cardToCompare: Card): Boolean {
+    fun hasSameSuiteAs(cardToCompare: Card): Boolean {
         return this.suite == cardToCompare.suite
     }
 

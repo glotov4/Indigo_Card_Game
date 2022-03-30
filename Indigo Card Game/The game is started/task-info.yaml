@@ -562,7 +562,7 @@ files:
 - name: src/indigo/printTable.kt
   visible: true
   learner_created: true
-feedback_link: https://hyperskill.org/projects/214/stages/1074/implement#comment
+feedback_link: https://hyperskill.org/learn/step/16510#comment
 status: Solved
 feedback:
   message: Congratulations!
